@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
+import { FormsModule } from '@angular/forms';
 import { ListOfRecipiesComponent } from './list-of-recipies/list-of-recipies.component';
 import { OneOfRecipeComponent } from './one-of-recipe/one-of-recipe.component';
 
@@ -10,11 +13,14 @@ import { OneOfRecipeComponent } from './one-of-recipe/one-of-recipe.component';
   declarations: [
     AppComponent,
     ListOfRecipiesComponent,
-    OneOfRecipeComponent
+    OneOfRecipeComponent,
+    RecipeComponent
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

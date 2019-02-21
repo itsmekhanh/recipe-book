@@ -1,0 +1,12 @@
+<h1>{{recipe.name | uppercase}} Details</h1>
+<div>
+  <label class="edit-recipe-input">name:
+    <input [(ngModel)]="recipe.name" placeholder="name">
+  </label>
+  <label class="edit-recipe-input">photo:
+    <input [(ngModel)]="recipe.photo" placeholder="photo">
+  </label >
+  <label class="edit-recipe-input">ingredients:
+    <input [(ngModel)]="recipe.ingredients" placeholder="ingredients">
+  </label>
+</div>
