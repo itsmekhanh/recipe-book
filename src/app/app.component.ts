@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recipe-book';
+  recipes = [
+    { name: 'Tacos', photo: 'https://www.google.com', ingredients: 'Meat, Tortilla, Cheese, Sour Cream, Pico, Guac', instructions: 'Put it all together.', isSelected: true, isEditing: false },
+    { name: 'Tacos', photo: 'https://www.google.com', ingredients: 'Meat, Tortilla, Cheese, Sour Cream, Pico, Guac', instructions: 'Put it all together.', isSelected: false, isEditing: false  },
+    { name: 'Tacos', photo: 'https://www.google.com', ingredients: 'Meat, Tortilla, Cheese, Sour Cream, Pico, Guac', instructions: 'Put it all together.', isSelected: false, isEditing: false  },
+    { name: 'Tacos', photo: 'https://www.google.com', ingredients: 'Meat, Tortilla, Cheese, Sour Cream, Pico, Guac', instructions: 'Put it all together.', isSelected: false, isEditing: false  }
+  ];
 }
